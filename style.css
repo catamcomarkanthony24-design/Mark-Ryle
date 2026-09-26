@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* CONTAINER */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* HEADER */
+.site-header {
+    background-color: #1e3a5f;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+/* BRAND */
+.brand {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* NAVIGATION */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffd166;
+}
+
+/* HERO SECTION */
+.hero {
+    padding: 70px 0;
+    background: linear-gradient(135deg, #dff3ff, #ffffff);
+}
+
+.hero-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+}
+
+/* HERO TEXT */
+.hero-copy h1 {
+    font-size: 60px;
+    color: #1e3a5f;
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* BUTTON */
+.button {
+    display: inline-block;
+    background-color: #1e3a5f;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease,
+                color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ffd166;
+    color: #1e3a5f;
+}
+
+/* HERO IMAGE */
+.hero-image {
+    margin: 0;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 550px;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* GENERAL SECTION SPACING */
+.section-space {
+    padding: 70px 0;
+}
+
+/* DESTINATIONS / EVENTS */
+.destinations {
+    background-color: white;
+}
+
+.eyebrow {
+    color: #1e3a5f;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.destinations h2 {
+    font-size: 35px;
+    color: #1e3a5f;
+    margin-bottom: 30px;
+}
+
+/* EVENT HEADINGS */
+.destinations h3 {
+    font-size: 23px;
+    color: #1e3a5f;
+    background-color: #dff3ff;
+    padding: 15px 20px;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    border-left: 5px solid #1e3a5f;
+    border-radius: 6px;
+}
+
+/* EVENT PARAGRAPHS */
+.destinations h3 + p {
+    font-size: 16px;
+    color: #555;
+    padding: 0 20px 10px;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+/* EVENT IMAGES */
+.destinations img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* BEST PART SECTION */
+.travel-tip {
+    background: linear-gradient(135deg, #dff3ff, #ffffff);
+}
+
+.tip-panel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* BEST PART HEADING */
+.tip-panel h2 {
+    font-size: 40px;
+    color: #1e3a5f;
+}
+
+/* BEST PART PARAGRAPH */
+.tip-panel > p {
+    font-size: 17px;
+    color: #555;
+    line-height: 1.9;
+}
+
+/* FOOTER */
+.site-footer {
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    font-size: 14px;
+}
+
+.site-footer p {
+    margin: 5px 0;
+}
+
+/* TABLET AND MOBILE */
+@media (max-width: 768px) {
+
+    /* HEADER */
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .brand {
+        font-size: 18px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    /* HERO */
+    .hero {
+        padding: 50px 0;
+    }
+
+    .hero-layout {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 35px;
+    }
+
+    .hero-copy h1 {
+        font-size: 45px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+    .hero-image img {
+        height: 300px;
+    }
+
+    /* EVENTS */
+    .section-space {
+        padding: 50px 0;
+    }
+
+    .destinations h2 {
+        font-size: 28px;
+    }
+
+    .destinations h3 {
+        font-size: 20px;
+    }
+
+    .destinations h3 + p {
+        font-size: 15px;
+        padding: 0 10px 10px;
+    }
+
+    /* BEST PART */
+    .tip-panel {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 20px;
+        padding: 30px 20px;
+    }
+
+    .tip-panel h2 {
+        font-size: 32px;
+    }
+
+    .tip-panel > p {
+        font-size: 16px;
+    }
+}
+
+/* SMALL MOBILE SCREENS */
+@media (max-width: 480px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .brand {
+        font-size: 16px;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .hero-copy h1 {
+        font-size: 36px;
+    }
+
+    .hero-image img {
+        height: 250px;
+    }
+
+    .destinations h2 {
+        font-size: 25px;
+    }
+
+    .destinations h3 {
+        font-size: 18px;
+        padding: 12px 15px;
+    }
+
+    .tip-panel h2 {
+        font-size: 28px;
+    }
+
+    .site-footer {
+        font-size: 12px;
+    }
+}
